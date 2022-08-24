@@ -21,27 +21,27 @@ public class ArithmeticExpressionValuesAnalyze {
 
             switch (c) {
                 case '+' -> {
-                    values.add(new ArithmeticExpressionValues(ArithmeticExpressionValues.ArithmeticExpressionValuesTypes.PLUS, c));
+                    values.add(new ArithmeticExpressionValues(ArithmeticExpressionValues.ArithmeticExpressionValuesTypes.PLUS, c, ArithmeticExpressionValues.ArithmeticExpressionValuesTypes2.OPERATORS));
                     positionChecker++;
                 }
                 case '-' -> {
-                    values.add(new ArithmeticExpressionValues(ArithmeticExpressionValues.ArithmeticExpressionValuesTypes.MINUS, c));
+                    values.add(new ArithmeticExpressionValues(ArithmeticExpressionValues.ArithmeticExpressionValuesTypes.MINUS, c, ArithmeticExpressionValues.ArithmeticExpressionValuesTypes2.OPERATORS));
                     positionChecker++;
                 }
                 case '*' -> {
-                    values.add(new ArithmeticExpressionValues(ArithmeticExpressionValues.ArithmeticExpressionValuesTypes.MULTIPLY, c));
+                    values.add(new ArithmeticExpressionValues(ArithmeticExpressionValues.ArithmeticExpressionValuesTypes.MULTIPLY, c, ArithmeticExpressionValues.ArithmeticExpressionValuesTypes2.OPERATORS));
                     positionChecker++;
                 }
                 case '/' -> {
-                    values.add(new ArithmeticExpressionValues(ArithmeticExpressionValues.ArithmeticExpressionValuesTypes.DIVIDE, c));
+                    values.add(new ArithmeticExpressionValues(ArithmeticExpressionValues.ArithmeticExpressionValuesTypes.DIVIDE, c, ArithmeticExpressionValues.ArithmeticExpressionValuesTypes2.OPERATORS));
                     positionChecker++;
                 }
                 case '(' -> {
-                    values.add(new ArithmeticExpressionValues(ArithmeticExpressionValues.ArithmeticExpressionValuesTypes.LEFT_PARENTHESIS, c));
+                    values.add(new ArithmeticExpressionValues(ArithmeticExpressionValues.ArithmeticExpressionValuesTypes.LEFT_PARENTHESIS, c, ArithmeticExpressionValues.ArithmeticExpressionValuesTypes2.PARENTHESIS));
                     positionChecker++;
                 }
                 case ')' -> {
-                    values.add(new ArithmeticExpressionValues(ArithmeticExpressionValues.ArithmeticExpressionValuesTypes.RIGHT_PARENTHESIS, c));
+                    values.add(new ArithmeticExpressionValues(ArithmeticExpressionValues.ArithmeticExpressionValuesTypes.RIGHT_PARENTHESIS, c, ArithmeticExpressionValues.ArithmeticExpressionValuesTypes2.PARENTHESIS));
                     positionChecker++;
                 }
                 default -> {
@@ -58,7 +58,7 @@ public class ArithmeticExpressionValuesAnalyze {
                             }
 
                         }
-                            values.add(new ArithmeticExpressionValues(ArithmeticExpressionValues.ArithmeticExpressionValuesTypes.NUMBER, fullNumber.toString()));
+                            values.add(new ArithmeticExpressionValues(ArithmeticExpressionValues.ArithmeticExpressionValuesTypes.NUMBER, fullNumber.toString(), ArithmeticExpressionValues.ArithmeticExpressionValuesTypes2.NUMBERS));
 
                     }
                     else if (c != ' ') throw new UnexpectedCharacterException("unexpected character", c);
@@ -69,7 +69,7 @@ public class ArithmeticExpressionValuesAnalyze {
                 }
             }
         }
-        values.add(new ArithmeticExpressionValues(ArithmeticExpressionValues.ArithmeticExpressionValuesTypes.EOF, ""));
+        values.add(new ArithmeticExpressionValues(ArithmeticExpressionValues.ArithmeticExpressionValuesTypes.EOF, "", ArithmeticExpressionValues.ArithmeticExpressionValuesTypes2.EOF));
         return values;
     }
 }
