@@ -1,4 +1,7 @@
-package com.geeksforless.yevdokymov;
+package com.geeksforless.yevdokymov.javaCore;
+
+import com.geeksforless.yevdokymov.exeption.UnexpectedCharacterException;
+import com.geeksforless.yevdokymov.javaCore.ArithmeticExpressionValues;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,11 +12,13 @@ import java.util.List;
  */
 public class ArithmeticExpressionValuesAnalyze {
     public ArrayList<ArithmeticExpressionValues> values = new ArrayList<>();
-    public  List<ArithmeticExpressionValues> analyze(StringBuilder arithmeticExpression) {
+    public  List<ArithmeticExpressionValues> analyze(StringBuilder arithmeticExpression) throws UnexpectedCharacterException{
 
         int positionChecker = 0;
         while (positionChecker < arithmeticExpression.length()) {
             char c = arithmeticExpression.charAt(positionChecker);
+
+
             switch (c) {
                 case '+':
                     values.add(new ArithmeticExpressionValues(ArithmeticExpressionValues.ArithmeticExpressionValuesTypes.PLUS, c));
@@ -40,30 +45,29 @@ public class ArithmeticExpressionValuesAnalyze {
                     positionChecker++;
                     continue;
                 default:
-                    if ('0' <= c && c <= '9') {
-                        StringBuilder fullNumber = new StringBuilder();
-                        do {
-                            fullNumber.append(c);
-                            positionChecker++;
 
-                            if (positionChecker >= arithmeticExpression.length()) {
-                                break;
+                        if ('0' <= c && c <= '9') {
+                            StringBuilder fullNumber = new StringBuilder();
+                            do {
+                                fullNumber.append(c);
+                                positionChecker++;
+
+                                if (positionChecker >= arithmeticExpression.length()) {
+                                    break;
+                                }
+                                else {
+                                    c = arithmeticExpression.charAt(positionChecker);
+                                }
                             }
-                            else {
-                                c = arithmeticExpression.charAt(positionChecker);
-                            }
+                            while ('0' <= c && c <= '9');
+                            values.add(new ArithmeticExpressionValues(ArithmeticExpressionValues.ArithmeticExpressionValuesTypes.NUMBER, fullNumber.toString()));
                         }
-                        while ('0' <= c && c <= '9');
-                        values.add(new ArithmeticExpressionValues(ArithmeticExpressionValues.ArithmeticExpressionValuesTypes.NUMBER, fullNumber.toString()));
-                    }
-                    else {
-                        if (c != ' ') {
-                            throw new RuntimeException("Unexpected character:" + c);
-                        }
+                        else if (c != ' ')  throw new UnexpectedCharacterException("Unexpected character", c);
                         positionChecker++;
                     }
             }
-        }
+
+
         values.add(new ArithmeticExpressionValues(ArithmeticExpressionValues.ArithmeticExpressionValuesTypes.EOF, ""));
         return values;
     }
