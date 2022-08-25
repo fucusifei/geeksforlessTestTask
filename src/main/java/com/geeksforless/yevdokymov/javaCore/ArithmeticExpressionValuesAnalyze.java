@@ -56,7 +56,7 @@ public class ArithmeticExpressionValuesAnalyze {
                     if ('0' <= c && c <= '9') {
                         StringBuilder fullNumber = new StringBuilder();
                         // зациклюємо операцію пошуку числа, якщо воно двузначне і більше, для його коректного запису у список
-                        while ('0' <= c && c <= '9'){
+                        while ('0' <= c && c <= '9' || c == '.'){
                             fullNumber.append(c);
                             positionChecker++;
 
