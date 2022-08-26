@@ -1,5 +1,6 @@
 package com.geeksforless.yevdokymov.javaCore;
 
+import com.geeksforless.yevdokymov.exсeption.OperatorsCheckerException;
 import com.geeksforless.yevdokymov.exсeption.UnexpectedCharacterException;
 
 
@@ -18,9 +19,10 @@ public class ArithmeticExpressionValuesAnalyze {
      *
      * @param arithmeticExpression введений користувачем арифметичний вираз
      */
-    public void analyze(StringBuilder arithmeticExpression) throws UnexpectedCharacterException{
+    public void analyze(StringBuilder arithmeticExpression) throws Exception {
         // змінна для проходження по всіх елементах списку
         int positionChecker = 0;
+        int minusChecker = 0;
         while (positionChecker < arithmeticExpression.length()) {
             // змінна в яку зберігається один символ по індексу positionChecker з введеного арифметичного виразу
             char c = arithmeticExpression.charAt(positionChecker);
@@ -33,7 +35,18 @@ public class ArithmeticExpressionValuesAnalyze {
                     positionChecker++;
                 }
                 case '-' -> {
-                    values.add(new ArithmeticExpressionValues(ArithmeticExpressionValues.ArithmeticExpressionValuesTypes.MINUS, c, ArithmeticExpressionValues.ArithmeticExpressionValuesTypes2.OPERATORS));
+                    if (positionChecker == 0) {
+                        minusChecker++;
+                    }
+                    else if (minusChecker == 1) {
+                        throw new OperatorsCheckerException("wrong operator placement");
+                    }
+                    else if (values.get(values.size()-1).getType().toString().equals("NUMBER") || values.get(values.size()-1).getType().toString().equals("RIGHT_PARENTHESIS")) {
+                        values.add(new ArithmeticExpressionValues(ArithmeticExpressionValues.ArithmeticExpressionValuesTypes.MINUS, c, ArithmeticExpressionValues.ArithmeticExpressionValuesTypes2.OPERATORS));
+                    }
+                    else {
+                        minusChecker++;
+                    }
                     positionChecker++;
                 }
                 case '*' -> {
@@ -57,8 +70,15 @@ public class ArithmeticExpressionValuesAnalyze {
                         StringBuilder fullNumber = new StringBuilder();
                         // зациклюємо операцію пошуку числа, якщо воно двузначне і більше, для його коректного запису у список
                         while ('0' <= c && c <= '9' || c == '.'){
-                            fullNumber.append(c);
-                            positionChecker++;
+                            if (minusChecker == 1) {
+                                fullNumber.append("-").append(c);
+                                positionChecker++;
+                                minusChecker--;
+                            }
+                           else {
+                                fullNumber.append(c);
+                                positionChecker++;
+                            }
 
                             if (positionChecker >= arithmeticExpression.length()) {
                                 break;

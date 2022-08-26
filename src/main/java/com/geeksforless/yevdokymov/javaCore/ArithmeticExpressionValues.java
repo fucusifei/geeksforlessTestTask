@@ -5,7 +5,16 @@ package com.geeksforless.yevdokymov.javaCore;
  * Класс ArithmeticExpressionValues - клас, який зберігає дані про кожен символ зчитуваної строки та його тип
  */
 public class ArithmeticExpressionValues {
-     public enum ArithmeticExpressionValuesTypes{
+    @Override
+    public String toString() {
+        return "ArithmeticExpressionValues{" +
+                "type=" + type +
+                ", value='" + value + '\'' +
+                ", operators=" + operators +
+                '}';
+    }
+
+    public enum ArithmeticExpressionValuesTypes{
         NUMBER, MINUS, PLUS, MULTIPLY, DIVIDE, LEFT_PARENTHESIS, RIGHT_PARENTHESIS, EOF
     }
     public enum ArithmeticExpressionValuesTypes2{

@@ -17,9 +17,11 @@ public class ArithmeticExpressionCalculating {
                 case 1 -> stackOperator.push(value.getValue());
                 case 2 -> {
                     if (!stackOperator.empty()) {
-                        if (getPriority(stackOperator.peek()) > priority) {
-                            calculateHelper(stackOperator.peek());
-                            stackOperator.pop();
+                        while (!stackOperator.empty()) {
+                            if (getPriority(stackOperator.peek()) >= priority) {
+                                calculateHelper(stackOperator.peek());
+                                stackOperator.pop();
+                            }
                         }
                     }
                     stackOperator.push(value.getValue());
@@ -42,6 +44,8 @@ public class ArithmeticExpressionCalculating {
                 }
             }
         }
+        System.out.println(stackNumber);
+        System.out.println(stackOperator);
     }
 
         public int getPriority (String value) {
