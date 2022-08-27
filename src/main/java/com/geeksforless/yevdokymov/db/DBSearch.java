@@ -13,7 +13,7 @@ public class DBSearch {
                     statement.setDouble(1, result);
                     ResultSet a = statement.executeQuery();
                     while (a.next()) {
-                        System.out.println(a.getString(1));
+                        System.out.println("Необхідний вираз: " + a.getString(1));
                     }
                 }
                 finally {
@@ -25,7 +25,7 @@ public class DBSearch {
                     statement.setDouble(1, result);
                     ResultSet a = statement.executeQuery();
                     while (a.next()) {
-                        System.out.println(a.getString(1));
+                        System.out.println("Необхідний вираз: " + a.getString(1));
                     }
                 }
                 finally {
@@ -37,7 +37,7 @@ public class DBSearch {
                     statement.setDouble(1, result);
                     ResultSet a = statement.executeQuery();
                     while (a.next()) {
-                        System.out.println(a.getString(1));
+                        System.out.println("Необхідний вираз: " + a.getString(1));
                     }
                 }
                 finally {
@@ -49,7 +49,7 @@ public class DBSearch {
                     statement.setDouble(1, result);
                     ResultSet a = statement.executeQuery();
                     while (a.next()) {
-                        System.out.println(a.getString(1));
+                        System.out.println("Необхідний вираз: " + a.getString(1));
                     }
                 }
                 finally {
@@ -61,7 +61,7 @@ public class DBSearch {
                     statement.setDouble(1, result);
                     ResultSet a = statement.executeQuery();
                     while (a.next()) {
-                        System.out.println(a.getString(1));
+                        System.out.println("Необхідний вираз: " + a.getString(1));
                     }
                 }
                 finally {

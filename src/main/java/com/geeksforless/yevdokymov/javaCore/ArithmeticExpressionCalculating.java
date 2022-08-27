@@ -6,8 +6,7 @@ import java.util.Stack;
 public class ArithmeticExpressionCalculating {
     private final Stack<String> stackNumber = new Stack<>();
     private final Stack<String> stackOperator = new Stack<>();
-    public void calculate (ArrayList<ArithmeticExpressionValues> values) {
-
+    public Double calculate (ArrayList<ArithmeticExpressionValues> values) {
         int priority;
         for (ArithmeticExpressionValues value : values) {
             priority = getPriority(value.getValue());
@@ -44,8 +43,12 @@ public class ArithmeticExpressionCalculating {
                 }
             }
         }
-        System.out.println(stackNumber);
-        System.out.println(stackOperator);
+        stackNumber.pop();
+        while (!stackOperator.empty()) {
+            calculateHelper(stackOperator.peek());
+            stackOperator.pop();
+        }
+       return Double.parseDouble(stackNumber.pop());
     }
 
         public int getPriority (String value) {

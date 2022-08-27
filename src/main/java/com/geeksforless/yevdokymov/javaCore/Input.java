@@ -12,6 +12,7 @@ public class Input {
      * Метод зчитування строки з консолі та запису її у StringBuilder
      */
     public void input () {
+        System.out.println("Ваш вираз ");
         Scanner in = new Scanner(System.in);
         arithmeticExpression = new StringBuilder(in.nextLine());
     }
