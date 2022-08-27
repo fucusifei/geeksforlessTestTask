@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="76ec941d-5f22-4b2f-91cc-ee3cbb842371" name="Changes" comment="complete work with Test">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geeksforless/yevdokymov/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geeksforless/yevdokymov/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geeksforless/yevdokymov/ParenthesisChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geeksforless/yevdokymov/db/ConnectionToDb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geeksforless/yevdokymov/db/ConnectionToDb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geeksforless/yevdokymov/db/Creator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geeksforless/yevdokymov/db/Creator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geeksforless/yevdokymov/db/DBSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geeksforless/yevdokymov/db/DBSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geeksforless/yevdokymov/db/DBUpdater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geeksforless/yevdokymov/db/DBUpdater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geeksforless/yevdokymov/db/Viewer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geeksforless/yevdokymov/db/Viewer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geeksforless/yevdokymov/exeption/ParenthesisCheckerException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geeksforless/yevdokymov/exeption/UnexpectedCharacterException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geeksforless/yevdokymov/javaCore/ArithmeticExpressionCalculating.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geeksforless/yevdokymov/javaCore/ArithmeticExpressionCalculating.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geeksforless/yevdokymov/javaCore/OperatorsChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geeksforless/yevdokymov/javaCore/OperatorsChecker.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit3 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2DkSm8TPQPYTgiy9YB5Ho2h1OSw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit3",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3": "junit.framework.TestCase",
+    "last_opened_file_path": "D:/gitlabProj/bogdan.evdokymov/17_sql_jdbc",
+    "settings.editor.selected.configurable": "preferences.keymap"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="junit.framework.TestCase" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.geeksforless.yevdokymov.javaCore" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ArithmeticExpressionCalculatingTest.testCalculate">
+    <configuration name="com.geeksforless.yevdokymov.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geeksforless.yevdokymov.Main" />
+      <module name="testTaskForJavaCourses" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.geeksforless.yevdokymov.javaCore.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArithmeticExpressionCalculatingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testTaskForJavaCourses" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.geeksforless.yevdokymov.javaCore.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.geeksforless.yevdokymov.javaCore" />
+      <option name="MAIN_CLASS_NAME" value="com.geeksforless.yevdokymov.javaCore.ArithmeticExpressionCalculatingTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArithmeticExpressionCalculatingTest.testCalculate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testTaskForJavaCourses" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.geeksforless.yevdokymov.javaCore.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.geeksforless.yevdokymov.javaCore" />
+      <option name="MAIN_CLASS_NAME" value="com.geeksforless.yevdokymov.javaCore.ArithmeticExpressionCalculatingTest" />
+      <option name="METHOD_NAME" value="testCalculate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArithmeticExpressionCalculatingTest.testGetPriority" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testTaskForJavaCourses" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.geeksforless.yevdokymov.javaCore.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.geeksforless.yevdokymov.javaCore" />
+      <option name="MAIN_CLASS_NAME" value="com.geeksforless.yevdokymov.javaCore.ArithmeticExpressionCalculatingTest" />
+      <option name="METHOD_NAME" value="testGetPriority" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ArithmeticExpressionCalculatingTest.testCalculate" />
+        <item itemvalue="Application.com.geeksforless.yevdokymov.Main" />
+        <item itemvalue="JUnit.ArithmeticExpressionCalculatingTest" />
+        <item itemvalue="JUnit.ArithmeticExpressionCalculatingTest.testGetPriority" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="76ec941d-5f22-4b2f-91cc-ee3cbb842371" name="Changes" comment="" />
+      <created>1661241746972</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1661241746972</updated>
+    </task>
+    <task id="LOCAL-00001" summary="add junit dependency">
+      <created>1661242098494</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1661242098494</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add log4j dependency">
+      <created>1661242398406</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1661242398406</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add Input.java class with input method realization">
+      <created>1661245281395</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1661245281395</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add ParenthesisChecker.java class">
+      <created>1661248156658</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1661248156658</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add ArithmeticExpressionValues.java class">
+      <created>1661249252509</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1661249252509</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add description for ArithmeticExpressionValues.java, ArithmeticExpressionValuesAnalyze.java and Input.java classes">
+      <created>1661332068451</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1661332068452</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add UnexpectedCharacterException.java and exception throwing to ArithmeticExpressionValuesAnalyze.java">
+      <created>1661336203916</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1661336203916</updated>
+    </task>
+    <task id="LOCAL-00008" summary="end work with exception in ArithmeticExpressionValuesAnalyze.java">
+      <created>1661338287886</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1661338287886</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add ArithmeticExpressionValuesTypes2 what help work with ParenthesisChecker">
+      <created>1661343531443</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1661343531443</updated>
+    </task>
+    <task id="LOCAL-00010" summary="end ParenthesisChecker.java class">
+      <created>1661345922408</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1661345922408</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add description to all classes">
+      <created>1661416525798</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1661416525798</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add opportunity to find double number in analyze method">
+      <created>1661416834197</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1661416834197</updated>
+    </task>
+    <task id="LOCAL-00013" summary="create all needed methods except calculating stack after For cycle">
+      <created>1661513553106</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1661513553106</updated>
+    </task>
+    <task id="LOCAL-00014" summary="end work with calculator">
+      <created>1661521519000</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1661521519000</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add Creator.java and ConnectionToDb.java">
+      <created>1661597229129</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1661597229129</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add DBUpdater.java class">
+      <created>1661600004360</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1661600004360</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add first version DBSearch.java class">
+      <created>1661601534759</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1661601534759</updated>
+    </task>
+    <task id="LOCAL-00018" summary="complete work with code">
+      <created>1661615289186</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1661615289186</updated>
+    </task>
+    <task id="LOCAL-00019" summary="complete work with Test">
+      <created>1661620423904</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1661620423904</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add junit dependency" />
+    <MESSAGE value="add log4j dependency" />
+    <MESSAGE value="add Input.java class with input method realization" />
+    <MESSAGE value="add ParenthesisChecker.java class" />
+    <MESSAGE value="add ArithmeticExpressionValues.java class" />
+    <MESSAGE value="add enum, getters, setters and constructor" />
+    <MESSAGE value="add description for ArithmeticExpressionValues.java, ArithmeticExpressionValuesAnalyze.java and Input.java classes" />
+    <MESSAGE value="add UnexpectedCharacterException.java and exception throwing to ArithmeticExpressionValuesAnalyze.java" />
+    <MESSAGE value="end work with exception in ArithmeticExpressionValuesAnalyze.java" />
+    <MESSAGE value="add ArithmeticExpressionValuesTypes2 what help work with ParenthesisChecker" />
+    <MESSAGE value="end ParenthesisChecker.java class" />
+    <MESSAGE value="add description to all classes" />
+    <MESSAGE value="add opportunity to find double number in analyze method" />
+    <MESSAGE value="create all needed methods except calculating stack after For cycle" />
+    <MESSAGE value="end work with calculator" />
+    <MESSAGE value="add Creator.java and ConnectionToDb.java" />
+    <MESSAGE value="add DBUpdater.java class" />
+    <MESSAGE value="add first version DBSearch.java class" />
+    <MESSAGE value="complete work with code" />
+    <MESSAGE value="complete work with Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete work with Test" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.EmptyStackException" package="java.util" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

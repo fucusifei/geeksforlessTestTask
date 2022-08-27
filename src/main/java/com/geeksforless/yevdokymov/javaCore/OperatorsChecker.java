@@ -22,9 +22,6 @@ public class OperatorsChecker {
                 if (values.get(i - 1).getOperators() == ArithmeticExpressionValues.ArithmeticExpressionValuesTypes2.OPERATORS)
                     throw new OperatorsCheckerException("wrong operator placement");
             }
-
         }
-
-
     }
 }

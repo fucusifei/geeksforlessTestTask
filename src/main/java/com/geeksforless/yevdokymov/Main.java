@@ -82,8 +82,6 @@ public class Main {
         dbUpdater.add(connectionToDb.getConnectionToDb(), inputObj.arithmeticExpression.toString(),arithmeticExpressionCalculating.calculate(analyze.values));
     }
     public static Double calculateToUpdate(StringBuilder arithmeticExpression) throws Exception {
-
-
         ArithmeticExpressionValuesAnalyze analyze = new ArithmeticExpressionValuesAnalyze();
         analyze.analyze(arithmeticExpression);
 

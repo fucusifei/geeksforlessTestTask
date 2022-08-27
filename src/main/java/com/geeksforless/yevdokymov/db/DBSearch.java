@@ -4,8 +4,19 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
+/**
+ * @author Богдан Євдокимов
+ * @version 1.0
+ * Класс DBSearch - клас для реалізації методу пошуку арифметичних виразів в БД
+ */
 public class DBSearch {
+    /**
+     * Метод пошуку арифметичних виразів в БД
+     *
+     * @param connection необхідний для під'єднання до БД
+     * @param searchWord символ для встановлення умов пошуку
+     * @param result поле результату виразу для пошуку
+     */
     public void search(Connection connection, String searchWord, double result) throws SQLException {
         switch (searchWord) {
             case ">" -> {
