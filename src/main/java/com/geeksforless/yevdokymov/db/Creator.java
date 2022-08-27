@@ -11,10 +11,8 @@ public class Creator {
     public static final String password = "1111";
     public static final String SQL_TABLES_CREATOR = "CREATE TABLE IF NOT EXISTS public.ArithmeticExpression" +
             "(" +
-            "IdArithmeticExpression integer NOT NULL DEFAULT 1," +
             "arithmeticExpression character varying COLLATE pg_catalog.default," +
-            "arithmeticExpressionResult integer," +
-            "CONSTRAINT ArithmeticExpression_pkey PRIMARY KEY (IdArithmeticExpression)" +
+            "arithmeticExpressionResult double precision" +
             ")";
     public void createNewTable() {
         try(
